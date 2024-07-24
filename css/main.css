@@ -1,38 +1,49 @@
 * {
-border: 1px dotted blue;
-padding: 0;
-margin: 0;
-box-sizing: 0;
+    border: 1px dotted black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Epilogue", sans-serif;
-
 }
 
-/**header */
+/** HEADER */
+
+.header {
+    background-color: yellowgreen;
+}
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    margin: 30px auto;
+    margin: 26px auto;
 }
 
-.logo {
+.logo{
     font-size: 20px;
     font-weight: 600;
 }
 
-nav.navbar {
+.navbar {
     display: none;
 }
 
-ul.main-menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+ul.main.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .hamburguer-icon {
+        display: none;
     }
 
-
+    .navbar {
+        display: block;
+    }
+}
