@@ -1,4 +1,5 @@
 :root {
+    /*Colors*/
     --anti-flash-white: #F3F3F3;
     --black: #000000;
     --charleston-green-v1: #2D2D2D;
@@ -37,10 +38,14 @@ color: var( --color-menu-link );
 /** HEADER */   
 
 .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
     margin: 26px auto;
 }
 
@@ -74,4 +79,9 @@ ul.main-menu {
     .navbar {
         display: block;
     }
+}
+
+/** Main: Section Bio*/
+.bio {
+    background-color: var( --pink-lace) ;
 }
