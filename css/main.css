@@ -26,20 +26,26 @@ body {
     font-family: "Epilogue", sans-serif;
 }
 
-.menu-item a {
-text-decoration: none;
-color: var( --color-menu-link );
-}
-.menu-item a:hover{
-    color: grey;
-}
-
 p {
     line-height: 1.4;
     font-size: 17px;
 }
 
 /** HEADER */   
+
+#logo{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu-item a {
+text-decoration: none;
+color: var( --color-menu-link );
+}
+
+.menu-item a:hover{
+    color: grey;
+}
 
 .container {
     width: 90%;
@@ -53,26 +59,17 @@ p {
     margin: 26px auto;
 }
 
-.logo{
-    font-size: 20px;
-    font-weight: 600;
-}
 
 .navbar {
     display: none;
 }
 
 ul.main-menu {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: .5rem;
-}
-
-ul.main-menu {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: .5rem;
 }
 
 @media (min-width: 768px) {
@@ -86,9 +83,49 @@ ul.main-menu {
 }
 
 /** Main: Section Bio*/
+
 .bio {
     background-color: var( --pink-lace) ;
 }
+
+@media ( min-width:768px ) {
+    .bio-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 60%;
+        padding: 7rem 0;
+    }
+}
+
+
+/** Footer */
+
+.strong-footer-tittle{
+    color: #2d2d2d;
+    font-weight: bold
+}
+
+.footer-content{
+    display: flex;
+    gap: 10rem;
+    padding-top:0%;
+    margin-bottom: 8%;
+    font-family: epilogue;
+    color: #2d2d2d;
+
+}
+
+.info {
+    width: 40%;
+}
+
+.container-social-icons{
+    display: flex;  
+    align-items: baseline;
+}
+
 
 @media ( min-width:768px ) {
     .bio-content {
