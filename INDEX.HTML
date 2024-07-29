@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Portfolio Pablo Designero</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!--normalizeCSS-->
+    <!-- NormalizeCSS-->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
-
 </head>
 <body>
-
     <header class="header">
         <div class="container logo-navbar">
             <div id="logo">Logo</div>
-            <img class="hamburguer-icon" src="./images/mobile-menu.svg" alt="hamburguer-icon"> 
             <nav class="navbar">
                 <ul class="main-menu">
                     <li class="menu-item">
@@ -33,15 +29,15 @@
                     </li>
                 </ul>
             </nav>
+            <img class="hamburger-icon" src="./images/menu.svg" alt="Hamburger icon">
         </div>
     </header>
     <main class="main">
         <section class="bio">
             <div class="container bio-content">
                 <div class="avatar">
-                    <img class="avatar-img" src="./images/Pablo Designero.png" alt="Foto: Pablo Designero">
-                    <strong class="avatar-name">Pablo Designero
-                    </strong>
+                    <img class="avatar-image" src="./images/Pablo Designero.png" alt="Foto: Pablo Designero">
+                    <strong class="avatar-name">Pablo Designero</strong>
                     <p class="profession">Designer & Unicorn Trainer</p>
                 </div>
                 <div class="biography">
@@ -50,46 +46,52 @@
                 </div>
             </div>
         </section>
+        <br>
         <section class="description">
             <div class="container description-content">
                 description
             </div>
         </section>
-</main>
-<br>
-<br>
-<br>
-<footer class="footer">
-
-</footer>
-<div class="container footer-content">
-    <div class="lets work"></div>
-    <h2>Let's work together</h2>
-    <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-    <ul class="social media">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-    </ul>
-    <div class="form-contact">
-        <form action="">
-            <div class="field">
-                <input type="text" placeholder="Name">
+        <br>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="lets-work">
+                <h2>Let’s work together</h2>
+                <br>
+                <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
+                <br>
+                <br>
+                <ul class="social-media">
+                    <li><a href=""><img src="./images/discord.svg" alt=""></a></li>
+                    <li><a href=""><img src="./images/facebook.svg" alt=""></a></li>
+                    <li><a href=""><img src="./images/dribbble.svg" alt=""></a></li>
+                    <li><a href=""><img src="./images/nstagram.svg" alt=""></a></li>
+                    <li><a href=""><img src="./images/behance.svg" alt=""></a></li>
+                </ul>
             </div>
-            <div class="field">
-                <input type="text" placeholder="Email">
+            <div class="contact">
+                <form class="form-contact" action="">
+                    <div class="field">
+                        <input class="form-input" type="text" placeholder="Name">
+                    </div>
+                    <div class="field">
+                        <input class="form-input" type="email" placeholder="Email">
+                    </div>
+                    <div class="text">
+                        <input class="form-input" type="Type your message here" placeholder="Type your message here">
+                    </div>
+                    <div class="button">
+                        <button>Submit</button>
+                        <a href=""></a>
+                    </div>
+                </form>    
             </div>
-            <div class="field">
-                <textarea name="" id="" placeholder="Type your message here"></textarea>
-            </div>
-            <div class="field">
-            <button>Submit</button>
         </div>
-        </form>
-    </div>
-</div>
+        <br>
+        <br>
+        <br>
+    </footer>
     <script src="./js/main.js"></script>
 </body>
 </html>
