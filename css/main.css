@@ -8,11 +8,9 @@
     --piggy-pink: #F6DCE9;
     --pink-lace: #F9E6F0;
     --white: #ffffff;
+    --height-input: 69px;
 
-    /***/
-    --height-imput: 69px;
-
-    /***/
+    /**/
     --color-menu-link: var( --charleston-green-v1 );
 }
 
@@ -85,6 +83,28 @@ ul.main-menu {
 .bio {
     background-color: var( --pink-lace);
 }
+.bio-content {
+    padding: 4.8rem 0;
+}
+.avatar-name {
+    font-size: 17px;
+    margin: 1.2rem 0;
+}
+
+.name-designer {
+    display: block;
+    text-decoration: underline;
+}
+
+.profession {
+    font-weight: normal;
+    display: block;
+}
+
+
+.biography {
+    margin-top: 6rem;
+}
 
 @media ( min-width: 768px ) {
     .bio-content {
@@ -95,16 +115,87 @@ ul.main-menu {
         width: 60%;
         padding: 7rem 0;
     }
+
+    .biography {
+        margin-top: initial;
+    .description-content {
+        width: 70%;
+    }
+
 }
 
 /** Main: Section Story */
 
+
+.container.description-content {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 180px;
+    padding-right: 180px;
+    justify-content: center;
+}
+
+.description-content {
+    padding: 5rem 0;
+
+}
+
+h2 {
+
+color: var(#2B2B2B);
+font-size: 24px;
+font-family:Epilogue;
+font-weight: 500;
+
+}
+
+.description-content *:first-child {
+    margin-bottom: 2.5rem;
+    font-weight: normal;
+    line-height: 1.7;
+}
+.description-content p {
+    line-height: 1.7;
+}
+
+
+/** Inicio: Forma 1*/
+/* .description-content *:nth-child( even ) {
+    background: #009379;
+}
+.description-content *:last-child {
+    background: #FFFFFF;
+} */
+/** Fin: Forma 1 */
+/** Inicio: Forma 2 */
+/* .description-content *:nth-child(2),
+.description-content *:nth-child(4) {
+    background: blue;
+} */
+
+/* Selecciona cada elemento hijo par excepto el Ãºltimo */
+.description-content *:nth-child(2n):not(:nth-last-child(1)) {
+    background-color: var(--paolo-veronese-green); 
+    color: #F6DCE9;
+    font-weight:600;/* Cambia esto al color de fondo que prefieras */
+}
 
 /** Footer */
 
 .footer-content {
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    border-top:3px solid var(--anti-flash-white) ;
+    padding: 3rem;
+
+}
+
+@media ( min-width: 768px ) {
+    .footer-content{
+        flex-direction: row; 
+    }
 }
 
 .h2 {
@@ -125,20 +216,24 @@ ul {
     background-color: none;
     float: left;
     text-align: center;
-    width: 4em;
+    width: 4rem;
   }
 
   .text {
-    width: 100%;             /* Ocupa todo el ancho del contenedor padre */
-    height: 200px;           /* Alto fijo */
-    padding: 12px;           /* Espacio interno */
-    background-color: #F3F3F3; /* Color de fondo claro */
-    font-size: 16px;         /* Tamaño de la fuente */
-    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
-    resize: both;           /* Permite redimensionar en ambas direcciones */
+    width: 100%;
+    height: 200%;
+    outline: none; /* Remove the outline on focus */
+    box-shadow: none; /* Remove any box-shadow */
+    padding: 3px; /* Optional: Add padding for better text positioning */
+    border-radius: 5px; /* Optional: Rounded corners */
+    background-color: #F3F3F3; /* Optional: Background color */
+    font-size: 16px; /* Optional: Font size */
+    resize: none;
   }
   
-
+  textarea.form-input {
+    resize: none;
+}
 
 .form-input {
     width: 100%;
@@ -146,6 +241,7 @@ ul {
     padding: 25px;
     margin-bottom: 1rem;
     border: none;
+    outline: none;
     background-color: var( --anti-flash-white );
 }
 
@@ -153,16 +249,16 @@ button {
     background-color: #2d2d2d;
     color: #FFFFFF;
     width: 40%;
-    height: 150%;
+    height: 280%;
     font-family: epilogue, semi-bold;
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 10px 25px;
 }   
 
 .contact {
     flex-basis: 50%;
 }
 
-textarea.form-imput {
+textarea.form-input {
     height: calc( var( --height-imput )*3 );
 }
