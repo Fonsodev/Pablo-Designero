@@ -8,10 +8,15 @@
     --piggy-pink: #F6DCE9;
     --pink-lace: #F9E6F0;
     --white: #ffffff;
+
+    /*Distancia formulario*/
     --height-input: 69px;
 
-    /**/
+    /*Enlaces*/
     --color-menu-link: var( --charleston-green-v1 );
+
+    /*Valor estandar de las fuentes*/
+    --overall-font-size: 62.5%;
 }
 
 * {
@@ -21,24 +26,30 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: var( --overall-font-size );
+}
+
 body {
     font-family: "Epilogue", sans-serif;
+    font-size: 1.6rem; /* 16px */
 }
 
 p {
     line-height: 1.4;
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 /** Header */
 #logo {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .menu-item a {
     text-decoration: none;
     color: var( --color-menu-link );
+    font-size: 1.7rem;
 }
 .menu-item a:hover {
     color: gray;
@@ -80,19 +91,12 @@ ul.main-menu {
 }
 
 /** Main: Section Bio */
-.bio {
-    background-color: var( --pink-lace);
-}
-.bio-content {
-    padding: 4.8rem 0;
-}
 .avatar-name {
-    font-size: 17px;
+    font-size: 1.7rem;
     margin: 1.2rem 0;
 }
 
 .name-designer {
-    display: block;
     text-decoration: underline;
 }
 
@@ -101,9 +105,16 @@ ul.main-menu {
     display: block;
 }
 
-
 .biography {
     margin-top: 6rem;
+    font-size: 1.7rem;
+}
+
+.bio {
+    background-color: var( --pink-lace);
+}
+.bio-content {
+    padding: 4.8rem 0;
 }
 
 @media ( min-width: 768px ) {
@@ -115,39 +126,17 @@ ul.main-menu {
         width: 60%;
         padding: 7rem 0;
     }
-
     .biography {
         margin-top: initial;
+    }
     .description-content {
         width: 70%;
     }
-
 }
 
 /** Main: Section Story */
-
-
-.container.description-content {
-    margin-top: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 180px;
-    padding-right: 180px;
-    justify-content: center;
-}
-
 .description-content {
     padding: 5rem 0;
-
-}
-
-h2 {
-
-color: var(#2B2B2B);
-font-size: 24px;
-font-family:Epilogue;
-font-weight: 500;
-
 }
 
 .description-content *:first-child {
@@ -157,8 +146,8 @@ font-weight: 500;
 }
 .description-content p {
     line-height: 1.7;
+    font-size: 1.6rem;
 }
-
 
 /** Inicio: Forma 1*/
 /* .description-content *:nth-child( even ) {
@@ -176,89 +165,86 @@ font-weight: 500;
 
 /* Selecciona cada elemento hijo par excepto el Ãºltimo */
 .description-content *:nth-child(2n):not(:nth-last-child(1)) {
-    background-color: var(--paolo-veronese-green); 
-    color: #F6DCE9;
-    font-weight:600;/* Cambia esto al color de fondo que prefieras */
-}
+    background-color: var(--paolo-veronese-green);
+    color: var(--piggy-pink);
+    font-weight: 600;
+}     
+/** Fin: Forma 2 */
 
 /** Footer */
-
 .footer-content {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    border-top:3px solid var(--anti-flash-white) ;
-    padding: 3rem;
+    border-top: 3px solid var(--anti-flash-white);
+    padding: 3rem 0;
+}
 
+input::-webkit-input-placeholder {
+    font-size: 1.7rem;
+}
+input:-moz-placeholder {
+    font-size: 1.7rem;
+}
+input::-moz-placeholder {
+    font-size: 1.7rem;
+}
+input::-ms-input-placeholder {
+    font-size: 1.7rem;
 }
 
 @media ( min-width: 768px ) {
-    .footer-content{
-        flex-direction: row; 
+    .footer-content {
+        flex-direction: row;
     }
-}
-
-.h2 {
-    font-family: epilogue;
-    font-size: 32;
-    color: #2D2D2D;
 }
 
 
 .lets-work {
     flex-basis: 30%;
 }
-ul {
-    list-style-type: none;
-  }
-  
-  li {
-    background-color: none;
-    float: left;
-    text-align: center;
-    width: 4rem;
-  }
-
-  .text {
-    width: 100%;
-    height: 200%;
-    outline: none; /* Remove the outline on focus */
-    box-shadow: none; /* Remove any box-shadow */
-    padding: 3px; /* Optional: Add padding for better text positioning */
-    border-radius: 5px; /* Optional: Rounded corners */
-    background-color: #F3F3F3; /* Optional: Background color */
-    font-size: 16px; /* Optional: Font size */
-    resize: none;
-  }
-  
-  textarea.form-input {
-    resize: none;
+.lets-work h2 {
+    margin-bottom: 2.4rem;
+    font-size: 3.2rem;
 }
-
-.form-input {
-    width: 100%;
-    height: var( --height-imput );
-    padding: 25px;
-    margin-bottom: 1rem;
-    border: none;
-    outline: none;
-    background-color: var( --anti-flash-white );
+ul.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    gap: .5rem;
+    margin: 2.4rem 0;
 }
-
-button {
-    background-color: #2d2d2d;
-    color: #FFFFFF;
-    width: 40%;
-    height: 280%;
-    font-family: epilogue, semi-bold;
-    font-size: 20px;
-    padding: 10px 25px;
-}   
 
 .contact {
     flex-basis: 50%;
 }
 
+.form-input { 
+    width: 100%;
+    height: var( --height-input );
+    padding: 25px;
+    margin-bottom: 1rem;
+    background-color: var( --anti-flash-white );
+    border: none;
+    outline: none;
+}
+
+.btn {
+    width: 235px;
+    display: inline-block;
+    padding: 25px 85px;
+    border: 1px solid transparent;
+    margin: 1.6rem 0;
+    font-size: 2rem;
+}
+
+.btn--bg-black {
+    background-color: var( --black );
+    color: var( --white );
+    font-weight: bold;
+}
+
 textarea.form-input {
-    height: calc( var( --height-imput )*3 );
+    height: calc( var( --height-input ) * 3 );
+    resize: none;
 }
