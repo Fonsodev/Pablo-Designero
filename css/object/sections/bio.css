@@ -1,0 +1,26 @@
+/** Main: Section Bio */
+.avatar-name {
+    font-size: 1.7rem;
+    margin: 1.2rem 0;
+}
+
+.name-designer {
+    text-decoration: underline;
+}
+
+.profession {
+    font-weight: normal;
+    display: block;
+}
+
+.biography {
+    margin-top: 6rem;
+    font-size: 1.7rem;
+}
+
+.bio {
+    background-color: var( --pink-lace);
+}
+.bio-content {
+    padding: 4.8rem 0;
+}

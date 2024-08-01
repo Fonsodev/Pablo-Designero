@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Pablo Designero</title>
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <!-- NormalizeCSS-->
-    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header class="header">
         <div class="container logo-navbar">
-            <div id="logo">Logo</div>
+            <div id="logo" class="logo">Logo</div>
             <nav class="navbar">
                 <ul class="main-menu">
                     <li class="menu-item">
@@ -33,14 +30,20 @@
         </div>
     </header>
     <main class="main">
+  
         <section class="bio">
             <div class="container bio-content">
                 <div class="avatar">
-                    <img class="avatar-image" src="./images/Pablo Designero.png" alt="Foto: Pablo Designero">
+                    <img class="avatar-image" src="./images/pablo-designero.png" alt="Foto: Pablo Designero">
+                    
                     <h1 class="avatar-name">
-                        <span class="name-designer">Pablo Designero</span>
+                        <span class="name-designer">Pablo Designero</span> 
                         <span class="profession">Designer & Unicorn Trainer</span>
                     </h1>
+                    
+                    <!-- <strong class="avatar-name">Pablo Designero</strong>
+                    <p class="profession">Designer & Unicorn Trainer</p> -->
+                
                 </div>
                 <div class="biography">
                     <strong>Bio:</strong>
@@ -49,7 +52,7 @@
             </div>
         </section>
         <section class="description">
-                <div class="container description-content">
+            <div class="container description-content">
                 <h2>When I was 5, I got adbucted by a unicorn family. When they returned me to earth, I joined a designer school. But, fo’ real, what I learned with my kidnaptive family really gave an edge to my creative language.</h2>
                 <p>Being a human is way too complicated. Time to be a unicorn.</p>
                 <p>Try it and you’ll see. Then your Figma files are just gonna fly in color, glitter, interactions and autolayout.</p>
@@ -58,26 +61,43 @@
                 <p>Projects include, RocknRoll covers, furniture refurbishing, Unicorn potty training and more.</p>
             </div>
         </section>
+        
     </main>
     <footer class="footer">
         <div class="container footer-content">
             <div class="lets-work">
                 <h2>Let’s work together</h2>
-                <br>
-                <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com 
-                This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-                <br>
-                <br>
+                <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
                 <ul class="social-media">
-                    <li><a href="https://discord.com/" target="_blank"><img src="./images/discord.svg" alt="Discord Icon"></a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank"><img src="./images/facebook.svg" alt="facebook Icon"></a></li>
-                    <li><a href="https://dribbble.com/" target="_blank"><img src="./images/dribbble.svg" alt="Dribbble Icon"></a></li>
-                    <li><a href="https://instagram.com/" target="_blank"><img src="./images/nstagram.svg" alt="Instagram Icon"></a></li>
-                    <li><a href="https://behance.com/" target="_blank"><img src="./images/behance.svg" alt="Behance Icon"></a></li>
+                    <li>
+                        <a href="https://discord.com/" target="_blank">
+                            <img src="./images/discord.svg" alt="Discord Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+                            <img src="./images/facebook.svg" alt="Facebook Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/" target="_blank">
+                            <img src="./images/dribbble.svg" alt="Dribbble Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="./images/nstagram.svg" alt="Instagram Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.behance.net/" target="_blank">
+                            <img src="./images/behance.svg" alt="Behance Icon">
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="contact">
-                <form class="form-contact" action="">
+                <form class="form-contact">
                     <div class="field">
                         <input class="form-input" type="text" placeholder="Name">
                     </div>
@@ -88,16 +108,14 @@
                         <textarea class="form-input" placeholder="Type your message here"></textarea>
                     </div>
                     <div class="field">
-                        <button>Submit</button>
-                        <a href=""></a>
+                        <button class="btn btn--bg-black">Submit</button>
                     </div>
-                </form>    
+                </form>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
+
     </footer>
+
     <script src="./js/main.js"></script>
 </body>
 </html>
